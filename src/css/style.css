@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap");
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    display: grid;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer';
+}
+
+.header {
+    grid-area: header;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    grid-area: main;
+}
+
+.main .info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 5% 10%;
+    background: url(../images/desktop/image-hero-left.png) -5% center no-repeat, url(../images/desktop/image-hero-right.png) 105% 50% no-repeat;
+}
+
+.main .info h1 {
+    font-size: 4rem;
+    color: var(--colors-yankees-blue);
+    margin-bottom: 1.25rem;
+}
+
+.main .info p {
+    color: var(--colors-silver);
+    font-size: 1.25rem;
+    margin-bottom: 3.125rem;
+}
+
+.main .buttons {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.download {
+    font: 900 1rem 'Red Hat Display', sans-serif;
+    color: var(--colors-lotion);
+    background: var(--colors-rackley);
+    padding: 0.9375rem 2.5rem;
+    border-radius: 6.25rem;
+    transition: 0.3s;
+}
+
+.download span,
+.download-footer span {
+    color: var(--colors-cyan);
+}
+
+.what {
+    font: 900 1rem 'Red Hat Display', sans-serif;
+    color: var(--colors-lotion);
+    background: var(--colors-purple);
+    padding: 0.9375rem 2.5rem;
+    border-radius: 6.25rem;
+    transition: 0.3s;
+}
+
+.download:hover,
+.what:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.main .images {
+    padding: 7% 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main .images h2 {
+    padding: 0.9375rem;
+    border-radius: 50%;
+    border: 1px solid var(--colors-mauve);
+    text-align: center;
+    color: var(--colors-silver);
+    font-size: 1rem;
+    margin-bottom: 3.125rem;
+}
+
+.main .images ul {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.main .wrapper {
+    height: 15rem;
+    width: 15.625rem;
+    overflow: hidden;
+    border-radius: 0.625rem;
+    position: relative;
+}
+
+.wrapper:hover img {
+    transform: scale(1.07);
+    cursor: pointer;
+}
+
+.main .wrapper img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+.main .features {
+    padding: 0 25%;
+    text-align: center;
+    margin-bottom: 6.25rem;
+}
+
+.main .features h3 {
+    text-transform: uppercase;
+    color: var(--colors-rackley);
+    font-weight: 900;
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.main .features h2 {
+    color: var(--colors-yankees-blue);
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.main .features p {
+    color: var(--colors-silver);
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.footer {
+    grid-area: footer;
+    padding: 10%;
+    display: flex;
+    justify-content: space-between;
+    background: url(../images/tablet/image-footer.jpg)  no-repeat;
+    background-size: cover;
+    gap: 3.125rem;
+    position: relative;
+    align-items: center;
+    z-index: 0;
+}
+
+.footer h2 {
+    padding: 0.9375rem;
+    border-radius: 50%;
+    background: var(--colors-lotion);
+    border: 1px solid var(--colors-mauve);
+    text-align: center;
+    color: var(--colors-silver);
+    font-size: 1rem;
+    margin-bottom: 3.125rem;
+    position: absolute;
+    top: -8%;
+    left: 47%;
+}
+
+.footer h1 {
+    color: var(--colors-lotion);
+    font-size: 2.5rem;
+}
+
+.footer p {
+    color: var(--colors-lotion);
+    font-size: 1.2rem;
+}
+
+.footer::after {
+    content: '';
+    background: var(--colors-rackley);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.download-footer {
+    display: flex;
+    gap: 5px;
+    font: 900 1rem 'Red Hat Display', sans-serif;
+    color: var(--colors-lotion);
+    background: var(--colors-purple);
+    padding: 0.9375rem 1.875rem;
+    border-radius: 6.25rem;
+    transition: 0.3s;
+}
+
+.download-footer:hover {
+    filter: brightness(150%);
+    cursor: pointer;
+}

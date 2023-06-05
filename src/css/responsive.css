@@ -1,0 +1,99 @@
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .main .info {
+        background: url(../images/tablet/image-hero.png) top center no-repeat;
+        padding: 35% 10% 5% 10%;
+    }
+
+    .main .images ul {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+    .main .info {
+        background: url(../images/tablet/image-hero.png) top center no-repeat;
+        padding: 45% 10% 5% 10%;
+    }
+
+    .main .images {
+        padding: 7%;
+    }
+
+    .main .wrapper {
+        width: 9.375rem;
+        height: 10rem;
+    }
+
+    .main .features {
+        padding: 0 10%;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer::after {
+        top: 0;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+    .header {
+        padding: 10% 5%; 
+    }
+    
+    .main .info {
+        background: url(../images/tablet/image-hero.png) top center no-repeat;
+        padding: 85% 5% 5% 5%;
+    }
+    
+    .download {
+        align-self: center;
+        width: 120%;
+    }
+
+    .main .info h1 {
+        font-size: 3rem;
+    }
+
+    .main .info p {
+        font-size: 1rem;
+    }
+
+    .main .buttons {
+        flex-direction: column;
+    }
+
+    .main .wrapper {
+        width: 9.375rem;
+        height: 10rem;
+    }
+
+    .main .images {
+        padding: 7% 7% 10% 7%;
+    }
+
+    .main .features {
+        padding: 5%;
+    }
+
+    .main .features h2 br {
+        display: none;
+    }
+
+    .main .images ul {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        background: url(../images/mobile/image-footer.jpg);
+    }
+
+    .footer::after {
+        top: 0;
+    }
+}
